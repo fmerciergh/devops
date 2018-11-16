@@ -20,7 +20,7 @@ node {
     }
 
     stage('publish docker') {
-        docker.withRegistry('https://registry.hub.docker.com', 'execut') {
+        docker.withRegistry('https://registry.hub.docker.com', 'docker-login') {
             dockerImage.push 'latest'
         }
     }
