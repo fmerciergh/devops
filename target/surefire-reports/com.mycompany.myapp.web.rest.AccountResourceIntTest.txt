@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.mycompany.myapp.web.rest.AccountResourceIntTest
+-------------------------------------------------------------------------------
+Tests run: 29, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.601 s - in com.mycompany.myapp.web.rest.AccountResourceIntTest

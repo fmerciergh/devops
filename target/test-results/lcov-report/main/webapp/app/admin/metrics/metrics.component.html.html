@@ -1,0 +1,827 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for main/webapp/app/admin/metrics/metrics.component.html</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../../index.html">All files</a> / <a href="index.html">main/webapp/app/admin/metrics</a> metrics.component.html
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>1/1</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>1/1</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254
+255</td><td class="line-coverage quiet"><span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&lt;div&gt;
+    &lt;h2&gt;
+        &lt;span id="metrics-page-heading"&gt;Application Metrics&lt;/span&gt;
+        &lt;button class="btn btn-primary float-right" (click)="refresh()"&gt;
+            &lt;fa-icon [icon]="'sync'"&gt;&lt;/fa-icon&gt; &lt;span&gt;Refresh&lt;/span&gt;
+        &lt;/button&gt;
+    &lt;/h2&gt;
+&nbsp;
+    &lt;h3&gt;JVM Metrics&lt;/h3&gt;
+    &lt;div class="row" *ngIf="!updatingMetrics"&gt;
+        &lt;div class="col-md-4"&gt;
+            &lt;b&gt;Memory&lt;/b&gt;
+            &lt;p&gt;&lt;span&gt;Total Memory&lt;/span&gt; ({{metrics.gauges['jvm.memory.total.used'].value / 1048576 | number:'1.0-0'}}M / {{metrics.gauges['jvm.memory.total.max'].value / 1048576 | number:'1.0-0'}}M)&lt;/p&gt;
+            &lt;ngb-progressbar type="success" [max]="metrics.gauges['jvm.memory.total.max'].value" [value]="metrics.gauges['jvm.memory.total.used'].value" [striped]="true" [animated]="false"&gt;
+                &lt;span&gt;{{metrics.gauges['jvm.memory.total.used'].value * 100 / metrics.gauges['jvm.memory.total.max'].value  | number:'1.0-0'}}%&lt;/span&gt;
+            &lt;/ngb-progressbar&gt;
+            &lt;p&gt;&lt;span&gt;Heap Memory&lt;/span&gt; ({{metrics.gauges['jvm.memory.heap.used'].value / 1048576 | number:'1.0-0'}}M / {{metrics.gauges['jvm.memory.heap.max'].value / 1048576 | number:'1.0-0'}}M)&lt;/p&gt;
+            &lt;ngb-progressbar [max]="metrics.gauges['jvm.memory.heap.max'].value" [value]="metrics.gauges['jvm.memory.heap.used'].value" [striped]="true" [animated]="false" type="success"&gt;
+                &lt;span&gt;{{metrics.gauges['jvm.memory.heap.used'].value * 100 / metrics.gauges['jvm.memory.heap.max'].value  | number:'1.0-0'}}%&lt;/span&gt;
+            &lt;/ngb-progressbar&gt;
+            &lt;p&gt;&lt;span&gt;Non-Heap Memory&lt;/span&gt; ({{metrics.gauges['jvm.memory.non-heap.used'].value / 1048576 | number:'1.0-0'}}M / {{metrics.gauges['jvm.memory.non-heap.committed'].value / 1048576 | number:'1.0-0'}}M)&lt;/p&gt;
+            &lt;ngb-progressbar [max]="metrics.gauges['jvm.memory.non-heap.committed'].value" [value]="metrics.gauges['jvm.memory.non-heap.used'].value" [striped]="true" [animated]="false" type="success"&gt;
+                &lt;span&gt;{{metrics.gauges['jvm.memory.non-heap.used'].value * 100 / metrics.gauges['jvm.memory.non-heap.committed'].value  | number:'1.0-0'}}%&lt;/span&gt;
+            &lt;/ngb-progressbar&gt;
+        &lt;/div&gt;
+        &lt;div class="col-md-4"&gt;
+            &lt;b&gt;Threads&lt;/b&gt; (Total: {{metrics.gauges['jvm.threads.count'].value}}) &lt;a class="hand" (click)="refreshThreadDumpData()" data-toggle="modal" data-target="#threadDump"&gt;&lt;fa-icon [icon]="'eye'"&gt;&lt;/fa-icon&gt;&lt;/a&gt;
+            &lt;p&gt;&lt;span&gt;Runnable&lt;/span&gt; {{metrics.gauges['jvm.threads.runnable.count'].value}}&lt;/p&gt;
+            &lt;ngb-progressbar [value]="metrics.gauges['jvm.threads.runnable.count'].value" [max]="metrics.gauges['jvm.threads.count'].value" [striped]="true" [animated]="false" type="success"&gt;
+                &lt;span&gt;{{metrics.gauges['jvm.threads.runnable.count'].value * 100 / metrics.gauges['jvm.threads.count'].value  | number:'1.0-0'}}%&lt;/span&gt;
+            &lt;/ngb-progressbar&gt;
+            &lt;p&gt;&lt;span&gt;Timed Waiting&lt;/span&gt; ({{metrics.gauges['jvm.threads.timed_waiting.count'].value}})&lt;/p&gt;
+            &lt;ngb-progressbar [value]="metrics.gauges['jvm.threads.timed_waiting.count'].value" [max]="metrics.gauges['jvm.threads.count'].value" [striped]="true" [animated]="false" type="warning"&gt;
+                &lt;span&gt;{{metrics.gauges['jvm.threads.timed_waiting.count'].value * 100 / metrics.gauges['jvm.threads.count'].value  | number:'1.0-0'}}%&lt;/span&gt;
+            &lt;/ngb-progressbar&gt;
+            &lt;p&gt;&lt;span&gt;Waiting&lt;/span&gt; ({{metrics.gauges['jvm.threads.waiting.count'].value}})&lt;/p&gt;
+            &lt;ngb-progressbar [value]="metrics.gauges['jvm.threads.waiting.count'].value" [max]="metrics.gauges['jvm.threads.count'].value" [striped]="true" [animated]="false" type="warning"&gt;
+                &lt;span&gt;{{metrics.gauges['jvm.threads.waiting.count'].value * 100 / metrics.gauges['jvm.threads.count'].value  | number:'1.0-0'}}%&lt;/span&gt;
+            &lt;/ngb-progressbar&gt;
+            &lt;p&gt;&lt;span&gt;Blocked&lt;/span&gt; ({{metrics.gauges['jvm.threads.blocked.count'].value}})&lt;/p&gt;
+            &lt;ngb-progressbar [value]="metrics.gauges['jvm.threads.blocked.count'].value" [max]="metrics.gauges['jvm.threads.count'].value" [striped]="true" [animated]="false" type="success"&gt;
+                &lt;span&gt;{{metrics.gauges['jvm.threads.blocked.count'].value * 100 / metrics.gauges['jvm.threads.count'].value  | number:'1.0-0'}}%&lt;/span&gt;
+            &lt;/ngb-progressbar&gt;
+        &lt;/div&gt;
+        &lt;div class="col-md-4"&gt;
+            &lt;b&gt;Garbage collections&lt;/b&gt;
+            &lt;div class="row" *ngIf="metrics.gauges['jvm.garbage.PS-MarkSweep.count']"&gt;
+                &lt;div class="col-md-9"&gt;Mark Sweep count&lt;/div&gt;
+                &lt;div class="col-md-3 text-right"&gt;{{metrics.gauges['jvm.garbage.PS-MarkSweep.count'].value}}&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="row" *ngIf="metrics.gauges['jvm.garbage.PS-MarkSweep.time']"&gt;
+                &lt;div class="col-md-9"&gt;Mark Sweep time&lt;/div&gt;
+                &lt;div class="col-md-3 text-right"&gt;{{metrics.gauges['jvm.garbage.PS-MarkSweep.time'].value}}ms&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="row" *ngIf="metrics.gauges['jvm.garbage.PS-Scavenge.count']"&gt;
+                &lt;div class="col-md-9"&gt;Scavenge count&lt;/div&gt;
+                &lt;div class="col-md-3 text-right"&gt;{{metrics.gauges['jvm.garbage.PS-Scavenge.count'].value}}&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="row" *ngIf="metrics.gauges['jvm.garbage.PS-Scavenge.time']"&gt;
+                &lt;div class="col-md-9"&gt;Scavenge time&lt;/div&gt;
+                &lt;div class="col-md-3 text-right"&gt;{{metrics.gauges['jvm.garbage.PS-Scavenge.time'].value}}ms&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="well well-lg" *ngIf="updatingMetrics"&gt;Updating...&lt;/div&gt;
+&nbsp;
+    &lt;h3&gt;HTTP requests (events per second)&lt;/h3&gt;
+    &lt;p *ngIf="metrics.counters"&gt;
+        &lt;span&gt;Active requests&lt;/span&gt; &lt;b&gt;{{metrics.counters['com.codahale.metrics.servlet.InstrumentedFilter.activeRequests'].count | number:'1.0-0'}}&lt;/b&gt; - &lt;span&gt;Total requests&lt;/span&gt; &lt;b&gt;{{metrics.timers['com.codahale.metrics.servlet.InstrumentedFilter.requests'].count | number:'1.0-0'}}&lt;/b&gt;
+    &lt;/p&gt;
+    &lt;div class="table-responsive" *ngIf="!updatingMetrics"&gt;
+        &lt;table class="table table-striped"&gt;
+            &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;Code&lt;/th&gt;
+                &lt;th&gt;Count&lt;/th&gt;
+                &lt;th class="text-right"&gt;Mean&lt;/th&gt;
+                &lt;th class="text-right"&gt;&lt;span&gt;Average&lt;/span&gt; (1 min)&lt;/th&gt;
+                &lt;th class="text-right"&gt;&lt;span&gt;Average&lt;/span&gt; (5 min)&lt;/th&gt;
+                &lt;th class="text-right"&gt;&lt;span&gt;Average&lt;/span&gt; (15 min)&lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;OK&lt;/td&gt;
+                &lt;td&gt;
+                    &lt;ngb-progressbar [max]="metrics.timers['com.codahale.metrics.servlet.InstrumentedFilter.requests'].count" [value]="metrics.meters['com.codahale.metrics.servlet.InstrumentedFilter.responseCodes.ok'].count" [striped]="true" [animated]="false" type="success"&gt;
+                        &lt;span&gt;{{metrics.meters['com.codahale.metrics.servlet.InstrumentedFilter.responseCodes.ok'].count}}&lt;/span&gt;
+                    &lt;/ngb-progressbar&gt;
+                &lt;/td&gt;
+                &lt;td class="text-right"&gt;
+                    {{filterNaN(metrics.meters['com.codahale.metrics.servlet.InstrumentedFilter.responseCodes.ok'].mean_rate) | number:'1.0-2'}}
+                &lt;/td&gt;
+                &lt;td class="text-right"&gt;
+                    {{filterNaN(metrics.meters['com.codahale.metrics.servlet.InstrumentedFilter.responseCodes.ok'].m1_rate) | number:'1.0-2'}}
+                &lt;/td&gt;
+                &lt;td class="text-right"&gt;
+                    {{filterNaN(metrics.meters['com.codahale.metrics.servlet.InstrumentedFilter.responseCodes.ok'].m5_rate) | number:'1.0-2'}}
+                &lt;/td&gt;
+                &lt;td class="text-right"&gt;
+                    {{filterNaN(metrics.meters['com.codahale.metrics.servlet.InstrumentedFilter.responseCodes.ok'].m15_rate) | number:'1.0-2'}}
+                &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Not Found&lt;/td&gt;
+                &lt;td&gt;
+                    &lt;ngb-progressbar [max]="metrics.timers['com.codahale.metrics.servlet.InstrumentedFilter.requests'].count" [value]="metrics.meters['com.codahale.metrics.servlet.InstrumentedFilter.responseCodes.notFound'].count" [striped]="true" [animated]="false" type="success"&gt;
+                        &lt;span&gt;{{metrics.meters['com.codahale.metrics.servlet.InstrumentedFilter.responseCodes.notFound'].count}}&lt;/span&gt;
+                    &lt;/ngb-progressbar&gt;
+                &lt;/td&gt;
+                &lt;td class="text-right"&gt;
+                    {{filterNaN(metrics.meters['com.codahale.metrics.servlet.InstrumentedFilter.responseCodes.notFound'].mean_rate) | number:'1.0-2'}}
+                &lt;/td&gt;
+                &lt;td class="text-right"&gt;
+                    {{filterNaN(metrics.meters['com.codahale.metrics.servlet.InstrumentedFilter.responseCodes.notFound'].m1_rate) | number:'1.0-2'}}
+                &lt;/td&gt;
+                &lt;td class="text-right"&gt;
+                    {{filterNaN(metrics.meters['com.codahale.metrics.servlet.InstrumentedFilter.responseCodes.notFound'].m5_rate) | number:'1.0-2'}}
+                &lt;/td&gt;
+                &lt;td class="text-right"&gt;
+                    {{filterNaN(metrics.meters['com.codahale.metrics.servlet.InstrumentedFilter.responseCodes.notFound'].m15_rate) | number:'1.0-2'}}
+                &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Server error&lt;/td&gt;
+                &lt;td&gt;
+                    &lt;ngb-progressbar [max]="metrics.timers['com.codahale.metrics.servlet.InstrumentedFilter.requests'].count" [value]="metrics.meters['com.codahale.metrics.servlet.InstrumentedFilter.responseCodes.serverError'].count" [striped]="true" [animated]="false" type="success"&gt;
+                        &lt;span&gt;{{metrics.meters['com.codahale.metrics.servlet.InstrumentedFilter.responseCodes.serverError'].count}}&lt;/span&gt;
+                    &lt;/ngb-progressbar&gt;
+                &lt;/td&gt;
+                &lt;td class="text-right"&gt;
+                    {{filterNaN(metrics.meters['com.codahale.metrics.servlet.InstrumentedFilter.responseCodes.serverError'].mean_rate) | number:'1.0-2'}}
+                &lt;/td&gt;
+                &lt;td class="text-right"&gt;
+                    {{filterNaN(metrics.meters['com.codahale.metrics.servlet.InstrumentedFilter.responseCodes.serverError'].m1_rate) | number:'1.0-2'}}
+                &lt;/td&gt;
+                &lt;td class="text-right"&gt;
+                    {{filterNaN(metrics.meters['com.codahale.metrics.servlet.InstrumentedFilter.responseCodes.serverError'].m5_rate) | number:'1.0-2'}}
+                &lt;/td&gt;
+                &lt;td class="text-right"&gt;
+                    {{filterNaN(metrics.meters['com.codahale.metrics.servlet.InstrumentedFilter.responseCodes.serverError'].m15_rate) | number:'1.0-2'}}
+                &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;/tbody&gt;
+        &lt;/table&gt;
+    &lt;/div&gt;
+&nbsp;
+    &lt;h3&gt;Services statistics (time in millisecond)&lt;/h3&gt;
+    &lt;div class="table-responsive" *ngIf="!updatingMetrics"&gt;
+        &lt;table class="table table-striped"&gt;
+            &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;Service name&lt;/th&gt;
+                &lt;th class="text-right"&gt;Count&lt;/th&gt;
+                &lt;th class="text-right"&gt;Mean&lt;/th&gt;
+                &lt;th class="text-right"&gt;Min&lt;/th&gt;
+                &lt;th class="text-right"&gt;p50&lt;/th&gt;
+                &lt;th class="text-right"&gt;p75&lt;/th&gt;
+                &lt;th class="text-right"&gt;p95&lt;/th&gt;
+                &lt;th class="text-right"&gt;p99&lt;/th&gt;
+                &lt;th class="text-right"&gt;Max&lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+            &lt;tr *ngFor="let entry of servicesStats | keys"&gt;
+                &lt;td&gt;{{entry.key}}&lt;/td&gt;
+                &lt;td class="text-right"&gt;{{entry.value.count}}&lt;/td&gt;
+                &lt;td class="text-right"&gt;{{entry.value.mean * 1024 | number:'1.0-0'}}&lt;/td&gt;
+                &lt;td class="text-right"&gt;{{entry.value.min * 1024 | number:'1.0-0'}}&lt;/td&gt;
+                &lt;td class="text-right"&gt;{{entry.value.p50 * 1024 | number:'1.0-0'}}&lt;/td&gt;
+                &lt;td class="text-right"&gt;{{entry.value.p75 * 1024 | number:'1.0-0'}}&lt;/td&gt;
+                &lt;td class="text-right"&gt;{{entry.value.p95 * 1024 | number:'1.0-0'}}&lt;/td&gt;
+                &lt;td class="text-right"&gt;{{entry.value.p99 * 1024 | number:'1.0-0'}}&lt;/td&gt;
+                &lt;td class="text-right"&gt;{{entry.value.max * 1024 | number:'1.0-0'}}&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;/tbody&gt;
+        &lt;/table&gt;
+    &lt;/div&gt;
+&nbsp;
+    &lt;h3&gt;Cache statistics&lt;/h3&gt;
+    &lt;div class="table-responsive" *ngIf="!updatingMetrics"&gt;
+        &lt;table class="table table-striped"&gt;
+            &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;Cache name&lt;/th&gt;
+                &lt;th class="text-right"&gt;Cache Hits&lt;/th&gt;
+                &lt;th class="text-right"&gt;Cache Misses&lt;/th&gt;
+                &lt;th class="text-right"&gt;Cache Gets&lt;/th&gt;
+                &lt;th class="text-right"&gt;Cache Puts&lt;/th&gt;
+                &lt;th class="text-right"&gt;Cache Removals&lt;/th&gt;
+                &lt;th class="text-right"&gt;Cache Evictions&lt;/th&gt;
+                &lt;th class="text-right"&gt;Cache Hit %&lt;/th&gt;
+                &lt;th class="text-right"&gt;Cache Miss %&lt;/th&gt;
+                &lt;th class="text-right"&gt;Average get time (µs)&lt;/th&gt;
+                &lt;th class="text-right"&gt;Average put time (µs)&lt;/th&gt;
+                &lt;th class="text-right"&gt;Average remove time (µs)&lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+            &lt;tr *ngFor="let entry of cachesStats | keys"&gt;
+                &lt;td&gt;{{entry.key}}&lt;/td&gt;
+                &lt;td class="text-right"&gt;{{metrics.gauges[entry.key + '.cache-hits'].value}}&lt;/td&gt;
+                &lt;td class="text-right"&gt;{{metrics.gauges[entry.key + '.cache-misses'].value}}&lt;/td&gt;
+                &lt;td class="text-right"&gt;{{metrics.gauges[entry.key + '.cache-gets'].value}}&lt;/td&gt;
+                &lt;td class="text-right"&gt;{{metrics.gauges[entry.key + '.cache-puts'].value}}&lt;/td&gt;
+                &lt;td class="text-right"&gt;{{metrics.gauges[entry.key + '.cache-removals'].value}}&lt;/td&gt;
+                &lt;td class="text-right"&gt;{{metrics.gauges[entry.key + '.cache-evictions'].value}}&lt;/td&gt;
+                &lt;td class="text-right"&gt;{{metrics.gauges[entry.key + '.cache-hit-percentage'].value}}&lt;/td&gt;
+                &lt;td class="text-right"&gt;{{metrics.gauges[entry.key + '.cache-miss-percentage'].value }}&lt;/td&gt;
+                &lt;td class="text-right"&gt;{{filterNaN(metrics.gauges[entry.key + '.average-get-time'].value)  | number : '1.2-2' }}&lt;/td&gt;
+                &lt;td class="text-right"&gt;{{filterNaN(metrics.gauges[entry.key + '.average-put-time'].value)  | number : '1.2-2'}}&lt;/td&gt;
+                &lt;td class="text-right"&gt;{{filterNaN(metrics.gauges[entry.key + '.average-remove-time'].value) | number : '1.2-2' }}&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;/tbody&gt;
+        &lt;/table&gt;
+    &lt;/div&gt;
+    &lt;h3 *ngIf="metrics.gauges &amp;&amp; metrics.gauges['HikariPool-1.pool.TotalConnections'] &amp;&amp; metrics.gauges['HikariPool-1.pool.TotalConnections'].value &gt; 0"&gt;DataSource statistics (time in millisecond)&lt;/h3&gt;
+    &lt;div class="table-responsive" *ngIf="!updatingMetrics &amp;&amp; metrics.gauges &amp;&amp; metrics.gauges['HikariPool-1.pool.TotalConnections'] &amp;&amp; metrics.gauges['HikariPool-1.pool.TotalConnections'].value &gt; 0"&gt;
+        &lt;table class="table table-striped"&gt;
+            &lt;thead&gt;
+                &lt;tr&gt;
+                    &lt;th&gt;&lt;span&gt;Usage&lt;/span&gt; ({{metrics.gauges['HikariPool-1.pool.ActiveConnections'].value}} / {{metrics.gauges['HikariPool-1.pool.TotalConnections'].value}})&lt;/th&gt;
+                    &lt;th class="text-right"&gt;Count&lt;/th&gt;
+                    &lt;th class="text-right"&gt;Mean&lt;/th&gt;
+                    &lt;th class="text-right"&gt;Min&lt;/th&gt;
+                    &lt;th class="text-right"&gt;p50&lt;/th&gt;
+                    &lt;th class="text-right"&gt;p75&lt;/th&gt;
+                    &lt;th class="text-right"&gt;p95&lt;/th&gt;
+                    &lt;th class="text-right"&gt;p99&lt;/th&gt;
+                    &lt;th class="text-right"&gt;Max&lt;/th&gt;
+                &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;
+                        &lt;div class="progress progress-striped"&gt;
+                            &lt;ngb-progressbar [max]="metrics.gauges['HikariPool-1.pool.TotalConnections'].value" [value]="metrics.gauges['HikariPool-1.pool.ActiveConnections'].value" [striped]="true" [animated]="false" type="success"&gt;
+                                &lt;span&gt;{{metrics.gauges['HikariPool-1.pool.ActiveConnections'].value * 100 / metrics.gauges['HikariPool-1.pool.TotalConnections'].value  | number:'1.0-0'}}%&lt;/span&gt;
+                            &lt;/ngb-progressbar&gt;
+                        &lt;/div&gt;
+                    &lt;/td&gt;
+                    &lt;td class="text-right"&gt;{{metrics.histograms['HikariPool-1.pool.Usage'].count}}&lt;/td&gt;
+                    &lt;td class="text-right"&gt;{{filterNaN(metrics.histograms['HikariPool-1.pool.Usage'].mean) | number:'1.0-2'}}&lt;/td&gt;
+                    &lt;td class="text-right"&gt;{{filterNaN(metrics.histograms['HikariPool-1.pool.Usage'].min) | number:'1.0-2'}}&lt;/td&gt;
+                    &lt;td class="text-right"&gt;{{filterNaN(metrics.histograms['HikariPool-1.pool.Usage'].p50) | number:'1.0-2'}}&lt;/td&gt;
+                    &lt;td class="text-right"&gt;{{filterNaN(metrics.histograms['HikariPool-1.pool.Usage'].p75) | number:'1.0-2'}}&lt;/td&gt;
+                    &lt;td class="text-right"&gt;{{filterNaN(metrics.histograms['HikariPool-1.pool.Usage'].p95) | number:'1.0-2'}}&lt;/td&gt;
+                    &lt;td class="text-right"&gt;{{filterNaN(metrics.histograms['HikariPool-1.pool.Usage'].p99) | number:'1.0-2'}}&lt;/td&gt;
+                    &lt;td class="text-right"&gt;{{filterNaN(metrics.histograms['HikariPool-1.pool.Usage'].max) | number:'1.0-2'}}&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/tbody&gt;
+        &lt;/table&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Fri Nov 16 2018 11:30:01 GMT+0000 (UTC)
+</div>
+</div>
+<script src="../../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../../sorter.js"></script>
+</body>
+</html>

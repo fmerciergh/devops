@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.mycompany.myapp.repository.CustomAuditEventRepositoryIntTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.325 s - in com.mycompany.myapp.repository.CustomAuditEventRepositoryIntTest
