@@ -10,13 +10,17 @@ node {
             sh "java -version"
         }
 
+        stage('quality analysis') {
+            withSonarQubeEnv('sonar') {
+            }
+        }
     }
 
     def dockerImage
     stage('build docker') {
-	sh "cp -R src/main/docker target/"
+	sh "cp -R src/main/docker target"
 	sh "cp target/*.war target/docker/"
-	dockerImage = docker.build('execut/devops-repo', 'target/docker')
+	dockerImage = docker.build('execut/devops-repo' 'target/docker')
     }
 
     stage('publish docker') {
